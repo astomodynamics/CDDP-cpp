@@ -3,7 +3,7 @@
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 
-#include "CDDP.hpp"
+#include "cddp-cpp/CDDP.hpp"
 
 namespace cddp {
 
