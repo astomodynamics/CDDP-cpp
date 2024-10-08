@@ -1,0 +1,809 @@
+tom:~/github/CDDP-cpp/build$ ./test/cddp_problem_tests 
+Iteration: 0
+Cost 212.337
+Time taken to get x and u: 53 nanoseconds sec
+Time taken to get A and B: 7669 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 3427 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 4244 nano sec
+Time taken to get x and u: 54 nanoseconds sec
+Time taken to get A and B: 959 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1407 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1556 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 719 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1145 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 933 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 510 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 908 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 848 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 325 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 752 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 974 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 608 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 879 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 849 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 426 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 760 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 926 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 417 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 817 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 882 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 371 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 750 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 778 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 505 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 856 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 816 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 353 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 810 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 754 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 361 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 744 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 767 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 695 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1069 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 846 nano sec
+Time taken to get x and u: 45 nanoseconds sec
+Time taken to get A and B: 670 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1064 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 882 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 665 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1101 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 881 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 675 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1054 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 906 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 688 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1030 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 939 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 666 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1004 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 916 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 672 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1020 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 916 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 663 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1015 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 874 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 671 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 989 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 874 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 699 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1073 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 901 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 666 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1012 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 882 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 692 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1027 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 890 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 660 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1026 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 893 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 696 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1019 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 889 nano sec
+Time taken to get x and u: 57 nanoseconds sec
+Time taken to get A and B: 688 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1031 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 896 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 673 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1018 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 878 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 658 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1052 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 887 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 689 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 991 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 888 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 624 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1002 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 880 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 690 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1017 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 876 nano sec
+Time taken to get x and u: 58 nanoseconds sec
+Time taken to get A and B: 665 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1027 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 884 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 696 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1054 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 879 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 683 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1017 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 883 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 681 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1283 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1031 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 763 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1059 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 910 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 717 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1040 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 889 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 709 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1061 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 902 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 695 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1062 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 889 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 645 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 943 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 860 nano sec
+Time taken to get x and u: 43 nanoseconds sec
+Time taken to get A and B: 672 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 973 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 877 nano sec
+Time taken to get x and u: 45 nanoseconds sec
+Time taken to get A and B: 644 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 969 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 842 nano sec
+Time taken to get x and u: 44 nanoseconds sec
+Time taken to get A and B: 651 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1001 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 854 nano sec
+Time taken to get x and u: 44 nanoseconds sec
+Time taken to get A and B: 630 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 7370 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 5595 nano sec
+Time taken to get x and u: 55 nanoseconds sec
+Time taken to get A and B: 2224 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1120 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1083 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 350 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 739 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 656 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 279 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 633 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 639 nano sec
+Time taken to get x and u: 35 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 588 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 590 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 376 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 622 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 599 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 252 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 664 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 630 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 264 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 581 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 594 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 269 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 571 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 596 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 318 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 578 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 582 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 266 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 592 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 589 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 270 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 585 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 589 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 270 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 571 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 584 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 267 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 591 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 590 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 473 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1012 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 940 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 519 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1111 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1252 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 290 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 601 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 578 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 266 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 586 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 587 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 268 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 580 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 593 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 260 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 578 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 640 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 267 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 591 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 591 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 270 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 570 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 592 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 301 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 584 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 603 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 271 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 585 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 655 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 249 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 598 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 577 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 270 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 599 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 585 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 282 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 603 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 733 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 274 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 611 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 632 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 272 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 592 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 637 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 313 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 583 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 588 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 573 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 584 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 274 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 577 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 651 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 276 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 595 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 577 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 265 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 593 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 594 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 265 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 573 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 636 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 268 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 606 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 630 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 286 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 581 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 584 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 264 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 579 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 590 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 608 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 588 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 579 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 593 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 265 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 570 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 594 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 295 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 588 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 582 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 272 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 561 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 584 nano sec
+Time taken to get x and u: 35 nanoseconds sec
+Time taken to get A and B: 269 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 569 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 623 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 265 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 599 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 589 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 301 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 594 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 588 nano sec
+Time taken to get x and u: 34 nanoseconds sec
+Time taken to get A and B: 292 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 594 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 589 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 263 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 577 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 617 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 250 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 582 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 579 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 268 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 573 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 590 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 267 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 573 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 583 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 277 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 602 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 587 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 270 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 585 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 591 nano sec
+Time taken to get x and u: 37 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 661 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 661 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 242 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 571 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 572 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 588 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 582 nano sec
+Forward pass Iteration: 0
+Iteration: 1
+Cost 203.084
+Time taken to get x and u: 91 nanoseconds sec
+Time taken to get A and B: 2402 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 3074 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 2433 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 1026 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1329 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1261 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 447 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1142 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1033 nano sec
+Time taken to get x and u: 55 nanoseconds sec
+Time taken to get A and B: 499 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1112 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1035 nano sec
+Time taken to get x and u: 49 nanoseconds sec
+Time taken to get A and B: 489 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1010 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 978 nano sec
+Time taken to get x and u: 75 nanoseconds sec
+Time taken to get A and B: 463 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1012 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 906 nano sec
+Time taken to get x and u: 50 nanoseconds sec
+Time taken to get A and B: 472 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1053 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 984 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 448 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1091 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 915 nano sec
+Time taken to get x and u: 52 nanoseconds sec
+Time taken to get A and B: 453 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1035 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 985 nano sec
+Time taken to get x and u: 50 nanoseconds sec
+Time taken to get A and B: 536 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1109 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 929 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 701 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 977 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 891 nano sec
+Time taken to get x and u: 50 nanoseconds sec
+Time taken to get A and B: 451 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 948 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 916 nano sec
+Time taken to get x and u: 60 nanoseconds sec
+Time taken to get A and B: 457 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 986 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 986 nano sec
+Time taken to get x and u: 56 nanoseconds sec
+Time taken to get A and B: 475 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1007 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1103 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 497 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1062 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 970 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 455 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1011 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1039 nano sec
+Time taken to get x and u: 56 nanoseconds sec
+Time taken to get A and B: 493 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1056 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1001 nano sec
+Time taken to get x and u: 44 nanoseconds sec
+Time taken to get A and B: 518 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 975 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 921 nano sec
+Time taken to get x and u: 50 nanoseconds sec
+Time taken to get A and B: 453 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 981 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1043 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 442 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 997 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1012 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 511 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1039 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 934 nano sec
+Time taken to get x and u: 50 nanoseconds sec
+Time taken to get A and B: 570 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 998 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1319 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 415 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1013 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1106 nano sec
+Time taken to get x and u: 53 nanoseconds sec
+Time taken to get A and B: 460 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 967 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 992 nano sec
+Time taken to get x and u: 48 nanoseconds sec
+Time taken to get A and B: 456 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 964 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 943 nano sec
+Time taken to get x and u: 51 nanoseconds sec
+Time taken to get A and B: 639 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 978 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 954 nano sec
+Time taken to get x and u: 55 nanoseconds sec
+Time taken to get A and B: 493 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 964 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1016 nano sec
+Time taken to get x and u: 49 nanoseconds sec
+Time taken to get A and B: 501 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1020 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1001 nano sec
+Time taken to get x and u: 53 nanoseconds sec
+Time taken to get A and B: 467 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 960 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 903 nano sec
+Time taken to get x and u: 49 nanoseconds sec
+Time taken to get A and B: 437 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 981 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1257 nano sec
+Time taken to get x and u: 61 nanoseconds sec
+Time taken to get A and B: 636 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1073 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1261 nano sec
+Time taken to get x and u: 56 nanoseconds sec
+Time taken to get A and B: 831 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1536 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1603 nano sec
+Time taken to get x and u: 52 nanoseconds sec
+Time taken to get A and B: 627 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1547 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1481 nano sec
+Time taken to get x and u: 80 nanoseconds sec
+Time taken to get A and B: 648 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1746 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1953 nano sec
+Time taken to get x and u: 49 nanoseconds sec
+Time taken to get A and B: 811 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1548 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1594 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 638 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1391 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1591 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 622 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1376 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1563 nano sec
+Time taken to get x and u: 59 nanoseconds sec
+Time taken to get A and B: 681 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1232 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1639 nano sec
+Time taken to get x and u: 52 nanoseconds sec
+Time taken to get A and B: 788 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1721 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1946 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 970 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1791 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1813 nano sec
+Time taken to get x and u: 46 nanoseconds sec
+Time taken to get A and B: 861 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1844 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 2282 nano sec
+Time taken to get x and u: 44 nanoseconds sec
+Time taken to get A and B: 1033 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1770 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 2631 nano sec
+Time taken to get x and u: 51 nanoseconds sec
+Time taken to get A and B: 1174 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1740 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1740 nano sec
+Time taken to get x and u: 51 nanoseconds sec
+Time taken to get A and B: 1106 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1771 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1877 nano sec
+Time taken to get x and u: 97 nanoseconds sec
+Time taken to get A and B: 838 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1722 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1719 nano sec
+Time taken to get x and u: 92 nanoseconds sec
+Time taken to get A and B: 928 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 2194 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1283 nano sec
+Time taken to get x and u: 47 nanoseconds sec
+Time taken to get A and B: 537 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1062 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1091 nano sec
+Time taken to get x and u: 51 nanoseconds sec
+Time taken to get A and B: 418 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1294 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 982 nano sec
+Time taken to get x and u: 45 nanoseconds sec
+Time taken to get A and B: 453 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1062 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1147 nano sec
+Time taken to get x and u: 43 nanoseconds sec
+Time taken to get A and B: 491 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 1206 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 1200 nano sec
+Time taken to get x and u: 60 nanoseconds sec
+Time taken to get A and B: 526 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 665 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 779 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 274 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 627 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 647 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 274 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 644 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 616 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 274 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 636 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 612 nano sec
+Time taken to get x and u: 36 nanoseconds sec
+Time taken to get A and B: 297 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 634 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 621 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 296 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 654 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 666 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 292 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 639 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 622 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 292 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 649 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 650 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 296 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 619 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 621 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 297 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 637 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 625 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 292 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 652 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 639 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 290 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 642 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 622 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 295 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 631 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 619 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 295 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 648 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 634 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 301 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 639 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 628 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 275 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 641 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 622 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 267 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 642 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 623 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 294 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 632 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 635 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 300 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 634 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 634 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 294 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 638 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 634 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 276 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 633 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 629 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 289 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 637 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 624 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 296 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 620 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 633 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 299 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 632 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 628 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 296 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 664 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 628 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 294 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 638 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 617 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 270 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 622 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 621 nano sec
+Time taken to get x and u: 43 nanoseconds sec
+Time taken to get A and B: 293 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 632 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 629 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 301 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 624 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 620 nano sec
+Time taken to get x and u: 43 nanoseconds sec
+Time taken to get A and B: 292 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 643 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 624 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 297 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 636 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 629 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 287 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 639 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 615 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 265 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 624 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 625 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 640 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 625 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 273 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 638 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 618 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 275 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 634 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 618 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 294 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 650 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 633 nano sec
+Time taken to get x and u: 42 nanoseconds sec
+Time taken to get A and B: 302 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 647 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 638 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 289 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 638 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 626 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 302 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 644 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 625 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 294 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 638 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 636 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 292 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 640 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 624 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 300 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 627 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 644 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 300 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 646 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 611 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 275 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 627 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 631 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 272 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 628 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 619 nano sec
+Time taken to get x and u: 40 nanoseconds sec
+Time taken to get A and B: 295 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 625 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 640 nano sec
+Time taken to get x and u: 39 nanoseconds sec
+Time taken to get A and B: 296 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 643 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 633 nano sec
+Time taken to get x and u: 41 nanoseconds sec
+Time taken to get A and B: 295 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 634 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 627 nano sec
+Time taken to get x and u: 38 nanoseconds sec
+Time taken to get A and B: 288 nano sec
+Time taken to get l_x, l_u, l_xx, l_ux, l_uu: 628 nano sec
+Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: 632 nano sec
+Forward pass Iteration: 0
+Forward Pass Failed
+Solver time: 6684 micro sec

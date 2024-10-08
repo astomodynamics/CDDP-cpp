@@ -374,12 +374,22 @@ bool CDDPProblem::solveBackwardPass() {
     V_X_.back() = objective_->calculateFinalCostGradient(X_.back());
     V_XX_.back() = objective_->calculateFinalCostHessian(X_.back());
 
+    auto start_time = std::chrono::high_resolution_clock::now();
+    auto end_time = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+
     // Solve Backward Ricatti Equation
     for (int i = horizon_ - 1; i >= 0; --i) {
+        start_time = std::chrono::high_resolution_clock::now();
         const Eigen::VectorXd& x = X_.at(i);
         const Eigen::VectorXd& u = U_.at(i);
+        end_time = std::chrono::high_resolution_clock::now();
+        duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+        std::cout << "Time taken to get x and u: " << duration.count() << " nanoseconds sec" << std::endl;
+
 
         // Calculate Dynamics Jacobians
+        start_time = std::chrono::high_resolution_clock::now();
         std::tuple<Eigen::MatrixXd, Eigen::MatrixXd> jacobians = dynamics_->getDynamicsJacobian(x, u);
         Eigen::MatrixXd f_x = std::get<0>(jacobians);
         Eigen::MatrixXd f_u = std::get<1>(jacobians);
@@ -387,8 +397,12 @@ bool CDDPProblem::solveBackwardPass() {
         // Calculate discrete time dynamics
         Eigen::MatrixXd A = Eigen::MatrixXd::Identity(dynamics_->state_size_, dynamics_->state_size_) + dt_ * f_x;
         Eigen::MatrixXd B = dt_ * f_u;
+        end_time = std::chrono::high_resolution_clock::now();
+        duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+        std::cout << "Time taken to get A and B: " << duration.count() << " nano sec" << std::endl;
 
         // Calculate cost gradients and Hessians
+        start_time = std::chrono::high_resolution_clock::now();
         std::tuple<Eigen::MatrixXd, Eigen::MatrixXd> gradients = objective_->calculateRunningCostGradient(x, u, i);
         Eigen::VectorXd l_x = std::get<0>(gradients);
         Eigen::VectorXd l_u = std::get<1>(gradients);
@@ -397,129 +411,136 @@ bool CDDPProblem::solveBackwardPass() {
         Eigen::MatrixXd l_xx = std::get<0>(hessians);
         Eigen::MatrixXd l_ux = std::get<1>(hessians);
         Eigen::MatrixXd l_uu = std::get<2>(hessians);
+        end_time = std::chrono::high_resolution_clock::now();
+        duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+        std::cout << "Time taken to get l_x, l_u, l_xx, l_ux, l_uu: " << duration.count() << " nano sec" << std::endl;
         
         // Q function calculations (iLQR based)
+        start_time = std::chrono::high_resolution_clock::now();
         Eigen::MatrixXd Q_x = l_x + A.transpose() * V_X_.at(i+1);
         Eigen::MatrixXd Q_u = l_u + B.transpose() * V_X_.at(i+1);
         Eigen::MatrixXd Q_xx = l_xx + A.transpose() * V_XX_.at(i+1) * A;
         Eigen::MatrixXd Q_ux = l_ux + B.transpose() * V_XX_.at(i+1) * A;
         Eigen::MatrixXd Q_uu = l_uu + B.transpose() * V_XX_.at(i+1) * B;
+        end_time = std::chrono::high_resolution_clock::now();
+        duration = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time);
+        std::cout << "Time taken to get Q_x, Q_u, Q_xx, Q_ux, Q_uu: " << duration.count() << " nano sec" << std::endl;
 // std::cout << "Q_xx: " << Q_xx << std::endl;
 // std::cout << "Q_uu: " << Q_uu << std::endl;
 
-        // Symmetrize Hessian
-        Q_uu = 0.5 * (Q_uu + Q_uu.transpose());
+//         // Symmetrize Hessian
+//         Q_uu = 0.5 * (Q_uu + Q_uu.transpose());
 
-        // Check eigenvalues of Q_uu
-        Eigen::EigenSolver<Eigen::MatrixXd> es(Q_uu);
-        Eigen::VectorXd eigenvalues = es.eigenvalues().real();
-        if (eigenvalues.minCoeff() <= 0) {
-            std::cout << "Q_uu is not positive definite" << std::endl;
-            break;
-        }
+//         // Check eigenvalues of Q_uu
+//         Eigen::EigenSolver<Eigen::MatrixXd> es(Q_uu);
+//         Eigen::VectorXd eigenvalues = es.eigenvalues().real();
+//         if (eigenvalues.minCoeff() <= 0) {
+//             std::cout << "Q_uu is not positive definite" << std::endl;
+//             break;
+//         }
 
-// TODO: Regularization
-// if (options_.regularization_type == 0) {
-//     Q_uu += options_.regularization_factor * Eigen::MatrixXd::Identity(dynamics_->control_size_, dynamics_->control_size_);
-// } else if (options_.regularization_type == 1) {
-//     Q_uu += options_.regularization_factor * Q_uu.maxCoeff() * Eigen::MatrixXd::Identity(dynamics_->control_size_, dynamics_->control_size_);
-// }    
-        /*  --- Identify Active Constraint --- */
-        Eigen::MatrixXd C = Eigen::MatrixXd::Zero(dynamics_->control_size_, dynamics_->control_size_);
-        Eigen::MatrixXd D = Eigen::MatrixXd::Zero(dynamics_->control_size_, dynamics_->state_size_);
+// // TODO: Regularization
+// // if (options_.regularization_type == 0) {
+// //     Q_uu += options_.regularization_factor * Eigen::MatrixXd::Identity(dynamics_->control_size_, dynamics_->control_size_);
+// // } else if (options_.regularization_type == 1) {
+// //     Q_uu += options_.regularization_factor * Q_uu.maxCoeff() * Eigen::MatrixXd::Identity(dynamics_->control_size_, dynamics_->control_size_);
+// // }    
+//         /*  --- Identify Active Constraint --- */
+//         Eigen::MatrixXd C = Eigen::MatrixXd::Zero(dynamics_->control_size_, dynamics_->control_size_);
+//         Eigen::MatrixXd D = Eigen::MatrixXd::Zero(dynamics_->control_size_, dynamics_->state_size_);
 
-        int active_constraint_index = 0;
-        Eigen::MatrixXd active_constraint_table = Eigen::MatrixXd::Zero(2 * (dynamics_->control_size_), horizon_);
+//         int active_constraint_index = 0;
+//         Eigen::MatrixXd active_constraint_table = Eigen::MatrixXd::Zero(2 * (dynamics_->control_size_), horizon_);
 
-        for (int j = 0; j < dynamics_->control_size_; j++) {
-            if (u(j) < control_box_constraint.getLowerBound()(j) - active_set_tol) {
-                Eigen::VectorXd e = Eigen::VectorXd::Zero(dynamics_->control_size_);
-                e(j) = 1;
-                C.row(active_constraint_index) = e;
-                active_constraint_index += 1;
-                active_constraint_table(j, i) = 1;
-            } else if (u(j) > control_box_constraint.getUpperBound()(j) + active_set_tol) {
-                Eigen::VectorXd e = Eigen::VectorXd::Zero(dynamics_->control_size_);
-                e(j) = -1;
-                C.row(active_constraint_index) = e;
-                active_constraint_index += 1;
-                active_constraint_table(j + dynamics_->control_size_, i) = 1;
-            }
-        }
+//         for (int j = 0; j < dynamics_->control_size_; j++) {
+//             if (u(j) < control_box_constraint.getLowerBound()(j) - active_set_tol) {
+//                 Eigen::VectorXd e = Eigen::VectorXd::Zero(dynamics_->control_size_);
+//                 e(j) = 1;
+//                 C.row(active_constraint_index) = e;
+//                 active_constraint_index += 1;
+//                 active_constraint_table(j, i) = 1;
+//             } else if (u(j) > control_box_constraint.getUpperBound()(j) + active_set_tol) {
+//                 Eigen::VectorXd e = Eigen::VectorXd::Zero(dynamics_->control_size_);
+//                 e(j) = -1;
+//                 C.row(active_constraint_index) = e;
+//                 active_constraint_index += 1;
+//                 active_constraint_table(j + dynamics_->control_size_, i) = 1;
+//             }
+//         }
 
-        Eigen::VectorXd k = Eigen::VectorXd::Zero(dynamics_->control_size_);
-        Eigen::MatrixXd K = Eigen::MatrixXd::Zero(dynamics_->control_size_, dynamics_->state_size_);
+//         Eigen::VectorXd k = Eigen::VectorXd::Zero(dynamics_->control_size_);
+//         Eigen::MatrixXd K = Eigen::MatrixXd::Zero(dynamics_->control_size_, dynamics_->state_size_);
 
-        if (active_constraint_index == 0) {
-            // Feedback Gain Calculation 
-            K = -Q_uu.inverse() * Q_ux;
-            k = -Q_uu.inverse() * Q_u;
-        } else {
-            // Shrink C and D matrices
-            C.conservativeResize(active_constraint_index, dynamics_->control_size_);
-            D.conservativeResize(active_constraint_index, dynamics_->state_size_);
+//         if (active_constraint_index == 0) {
+//             // Feedback Gain Calculation 
+//             K = -Q_uu.inverse() * Q_ux;
+//             k = -Q_uu.inverse() * Q_u;
+//         } else {
+//             // Shrink C and D matrices
+//             C.conservativeResize(active_constraint_index, dynamics_->control_size_);
+//             D.conservativeResize(active_constraint_index, dynamics_->state_size_);
 
-            // Calculate Lagrange Multipliers
-            Eigen::MatrixXd Q_uu_inv = Q_uu.inverse();
-            Eigen::MatrixXd lambda = (C * Q_uu_inv * C.transpose()).inverse() * C * Q_uu_inv * Q_u;
+//             // Calculate Lagrange Multipliers
+//             Eigen::MatrixXd Q_uu_inv = Q_uu.inverse();
+//             Eigen::MatrixXd lambda = (C * Q_uu_inv * C.transpose()).inverse() * C * Q_uu_inv * Q_u;
 
-            // Remove active constraints if lambda is negative
-            active_constraint_index = 0;
-            std::vector<int> deleted_index_list;
+//             // Remove active constraints if lambda is negative
+//             active_constraint_index = 0;
+//             std::vector<int> deleted_index_list;
 
-            for (int j = 0; j < dynamics_->control_size_; j++) {
-                if (active_constraint_table(j, i) == 1 && lambda(active_constraint_index) < 0) {
-                    C.row(active_constraint_index) = Eigen::VectorXd::Zero(dynamics_->control_size_);
-                    active_constraint_table(j, i) = 0;
-                    deleted_index_list.push_back(active_constraint_index);
-                    active_constraint_index += 1;
-                } else if (active_constraint_table(j + dynamics_->control_size_, i) == 1 && lambda(active_constraint_index) < 0) {
-                    C.row(active_constraint_index) = Eigen::VectorXd::Zero(dynamics_->control_size_);
-                    active_constraint_table(j, i) = 0;
-                    deleted_index_list.push_back(active_constraint_index);
-                    active_constraint_index += 1;
-                }
-            }
+//             for (int j = 0; j < dynamics_->control_size_; j++) {
+//                 if (active_constraint_table(j, i) == 1 && lambda(active_constraint_index) < 0) {
+//                     C.row(active_constraint_index) = Eigen::VectorXd::Zero(dynamics_->control_size_);
+//                     active_constraint_table(j, i) = 0;
+//                     deleted_index_list.push_back(active_constraint_index);
+//                     active_constraint_index += 1;
+//                 } else if (active_constraint_table(j + dynamics_->control_size_, i) == 1 && lambda(active_constraint_index) < 0) {
+//                     C.row(active_constraint_index) = Eigen::VectorXd::Zero(dynamics_->control_size_);
+//                     active_constraint_table(j, i) = 0;
+//                     deleted_index_list.push_back(active_constraint_index);
+//                     active_constraint_index += 1;
+//                 }
+//             }
 
 
-            Eigen::MatrixXd C_shrinked = Eigen::MatrixXd::Zero(C.rows() - deleted_index_list.size(), dynamics_->control_size_);
-            Eigen::MatrixXd D_shrinked = Eigen::MatrixXd::Zero(C.rows() - deleted_index_list.size(),  dynamics_->state_size_);
+//             Eigen::MatrixXd C_shrinked = Eigen::MatrixXd::Zero(C.rows() - deleted_index_list.size(), dynamics_->control_size_);
+//             Eigen::MatrixXd D_shrinked = Eigen::MatrixXd::Zero(C.rows() - deleted_index_list.size(),  dynamics_->state_size_);
 
-            // Shrink C and D matrices by taking out negative lambda
-            for (int j = 0; j < C.rows(); j++) {
-                if (std::find(deleted_index_list.begin(), deleted_index_list.end(), j) == deleted_index_list.end()) {
-                    C_shrinked.row(j) = C.row(j);
-                    D_shrinked.row(j) = D.row(j);
-                }
-            }
+//             // Shrink C and D matrices by taking out negative lambda
+//             for (int j = 0; j < C.rows(); j++) {
+//                 if (std::find(deleted_index_list.begin(), deleted_index_list.end(), j) == deleted_index_list.end()) {
+//                     C_shrinked.row(j) = C.row(j);
+//                     D_shrinked.row(j) = D.row(j);
+//                 }
+//             }
 
-            // Feedback Gain Calculation
-            Eigen::MatrixXd W = (C_shrinked * Q_uu_inv * C_shrinked.transpose()).inverse() * C_shrinked * Q_uu_inv;
-            Eigen::MatrixXd H = Q_uu_inv * (Eigen::MatrixXd::Identity(dynamics_->control_size_, dynamics_->control_size_) - C_shrinked.transpose() * W);
-            k = -H * Q_u;
-            K = -H * Q_ux;
-        }
+//             // Feedback Gain Calculation
+//             Eigen::MatrixXd W = (C_shrinked * Q_uu_inv * C_shrinked.transpose()).inverse() * C_shrinked * Q_uu_inv;
+//             Eigen::MatrixXd H = Q_uu_inv * (Eigen::MatrixXd::Identity(dynamics_->control_size_, dynamics_->control_size_) - C_shrinked.transpose() * W);
+//             k = -H * Q_u;
+//             K = -H * Q_ux;
+//         }
 
         
 
-        // Store Q-Function Matrices
-        Q_UU_.at(i) = Q_uu;
-        Q_UX_.at(i) = Q_ux;
-        Q_U_.at(i) = Q_u;
+//         // Store Q-Function Matrices
+//         Q_UU_.at(i) = Q_uu;
+//         Q_UX_.at(i) = Q_ux;
+//         Q_U_.at(i) = Q_u;
 
-        // Store Control Gains
-        k_.at(i) = k;
-        K_.at(i) = K;
+//         // Store Control Gains
+//         k_.at(i) = k;
+//         K_.at(i) = K;
 
-        // Update Value Function
-        double cost = objective_->calculateRunningCost(x, u, i);
-        V_X_.at(i) = Q_x + K.transpose() * Q_uu * k + Q_ux.transpose() * k + K.transpose() * Q_u;
-        V_XX_.at(i) = Q_xx + K.transpose() * Q_uu * K + Q_ux.transpose() * K + K.transpose() * Q_ux;
+//         // Update Value Function
+//         double cost = objective_->calculateRunningCost(x, u, i);
+//         V_X_.at(i) = Q_x + K.transpose() * Q_uu * k + Q_ux.transpose() * k + K.transpose() * Q_u;
+//         V_XX_.at(i) = Q_xx + K.transpose() * Q_uu * K + Q_ux.transpose() * K + K.transpose() * Q_ux;
 
-        // Symmetrize Hessian
-        V_XX_.at(i) = 0.5 * (V_XX_.at(i) + V_XX_.at(i).transpose()); 
+//         // Symmetrize Hessian
+//         V_XX_.at(i) = 0.5 * (V_XX_.at(i) + V_XX_.at(i).transpose()); 
 
-        V_.at(i) = cost + V_X_.at(i).transpose() * (x - goal_state_) + 0.5 * (x - goal_state_).transpose() * V_XX_.at(i) * (x - goal_state_);
+//         V_.at(i) = cost + V_X_.at(i).transpose() * (x - goal_state_) + 0.5 * (x - goal_state_).transpose() * V_XX_.at(i) * (x - goal_state_);
     }
     return true;
 }
